@@ -1,0 +1,2 @@
+rootProject.name = 'springboot-tech-sum'
+include('springboot-security-simple')
