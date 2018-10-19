@@ -1,0 +1,15 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: springboot-security-simple
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://115.159.114.50:3306/spring_security?characterEncoding=utf8&useSSL=false
+    username: oauth
+    password: oauth
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
