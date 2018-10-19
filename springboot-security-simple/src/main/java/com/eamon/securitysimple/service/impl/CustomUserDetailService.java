@@ -14,14 +14,13 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
 /**
  * @author: eamon
  * @date: 2018/10/19 15:39
- * @description:
+ * @description: 自定义userdetailservice
  */
 @Service
 public class CustomUserDetailService implements UserDetailsService {
