@@ -22,7 +22,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
     @Override
     public void configure(HttpSecurity http) throws Exception {
-        http.csrf().disable()//禁用了 csrf 功能
+        http.csrf().disable()//禁用了 csrf 功能 csrf会拦截所有post请求
                 .authorizeRequests()//限定签名成功的请求
                 .antMatchers("/decision/**", "/govern/**").hasAnyRole("USER", "ADMIN")
                 .antMatchers("/admin/**").hasRole("ADMIN")
