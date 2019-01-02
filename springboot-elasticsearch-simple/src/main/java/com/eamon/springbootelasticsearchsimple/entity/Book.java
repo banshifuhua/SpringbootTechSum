@@ -6,10 +6,13 @@ import org.springframework.data.elasticsearch.annotations.Document;
 /**
  * @author: eamon
  * @date: 2019-01-02 15:57
- * @description:
+ * @description: @Document(indexName = "booktest",type = "book")把该类进行索引，其中indexName为索引名称，type为类型，后面的值都可以随便填
  */
-@Document(indexName = "lee", type = "books")
+@Document(indexName = "booktest", type = "book")
 public class Book {
+    /**
+     * 索引的id
+     */
     @Id
     private String id;
     private String title;

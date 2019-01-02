@@ -6,6 +6,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.Optional;
+
 /**
  * @author: eamon
  * @date: 2019-01-02 15:59
@@ -13,6 +15,8 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface BookRepository extends ElasticsearchRepository<Book, String> {
+
+    Optional<Book> findById(String id);
 
     Page<Book> findByAuthor(String author, Pageable pageable);
 

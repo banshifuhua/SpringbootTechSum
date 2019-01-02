@@ -8,6 +8,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 /**
  * @author: eamon
  * @date: 2019-01-02 16:04
@@ -26,26 +28,32 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public void delete(Book book) {
-
+        bookRepository.delete(book);
     }
 
     @Override
     public Book findOne(String id) {
-        return null;
+        Optional<Book> optional = bookRepository.findById(id);
+        boolean present = optional.isPresent();
+        Book book = null;
+        if (present) {
+            book = optional.get();
+        }
+        return book;
     }
 
     @Override
     public Iterable<Book> findAll() {
-        return null;
+        return bookRepository.findAll();
     }
 
     @Override
     public Page<Book> findByAuthor(String author, PageRequest pageRequest) {
-        return null;
+        return bookRepository.findByAuthor(author, pageRequest);
     }
 
     @Override
     public Page<Book> findByTitle(String title, PageRequest pageRequest) {
-        return null;
+        return bookRepository.findByTitle(title, pageRequest);
     }
 }
