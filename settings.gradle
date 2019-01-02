@@ -1,3 +1,3 @@
-rootProject.name = 'springboot-tech-sum'
+rootProject.name = 'SpringbootTechSum'
 include('springboot-security-simple')
 include('springboot-security-oauth2')
