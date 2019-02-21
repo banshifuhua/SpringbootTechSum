@@ -8,7 +8,7 @@ import org.springframework.data.elasticsearch.annotations.Document;
  * @date: 2019-01-02 15:57
  * @description: @Document(indexName = "booktest",type = "book")把该类进行索引，其中indexName为索引名称，type为类型，后面的值都可以随便填
  */
-@Document(indexName = "booktest", type = "book")
+@Document(indexName = "springboot-elasticsearch-simple", type = "Book")
 public class Book {
     /**
      * 索引的id

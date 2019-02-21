@@ -22,9 +22,9 @@ public class BookController {
     public String add(@RequestParam String id) {
         Book book = new Book();
         book.setId(id);
-        book.setAuthor("eamon");
+        book.setAuthor("eamon" + id);
         book.setReleaseDate(String.valueOf(System.currentTimeMillis()));
-        book.setTitle("ADD");
+        book.setTitle("ADD" + id);
         Book save = bookService.save(book);
         return save.toString();
     }
