@@ -1,0 +1,13 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: springboot-mail
+  mail:
+    host: smtp.qq.com
+    username: eamonzzz
+    password: xdkalsrzlyuscahh
+    default-encoding: utf-8
+mail:
+  fromMail:
+    addr: eamonzzz@qq.com
