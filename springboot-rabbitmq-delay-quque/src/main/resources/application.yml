@@ -1,0 +1,10 @@
+spring:
+  rabbitmq:
+    addresses: localhost
+    port: 5672
+    username: admin
+    password: admin
+    listener:
+      simple:
+        # 手动ACK 不开启自动ACK模式,目的是防止报错后未正确处理消息丢失 默认 为 none
+        acknowledge-mode: manual
