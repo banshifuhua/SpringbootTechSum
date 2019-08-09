@@ -4,4 +4,5 @@ include('springboot-security-simple', 'springboot-security-oauth2', 'springboot-
 //include('springboot-elasticsearch-simple')
 include 'springboot-mail'
 include 'springboot-rabbitmq'
+include 'springboot-rabbitmq-delay-quque'
 
