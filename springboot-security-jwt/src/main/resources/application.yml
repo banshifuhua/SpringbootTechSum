@@ -1,0 +1,23 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: springboot-security-jwt
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://115.159.114.50:3307/spring_security_jwt?characterEncoding=utf8&useSSL=false
+    username: root
+    password: eamon.zhang
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+jwt:
+  tokenHeader: Authorization #JWT存储的请求头
+  tokenHead: Bearer  #JWT负载中拿到开头
+  secret: q8hKu0imxHNGBIj3RHYiDi494BoDvBdm #JWT加解密使用的密钥
+  expiration: 604800
+
