@@ -5,8 +5,9 @@ spring:
   application:
     name: springboot-security-simple
   datasource:
+    type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://115.159.114.50:3306/spring_security?characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://115.159.114.50:3307/spring_security?characterEncoding=utf8&useSSL=false
     username: oauth
     password: oauth
   jpa:
