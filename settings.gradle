@@ -1,7 +1,8 @@
-rootProject.name = 'SpringbootTechSum'
-include('springboot-security-simple', 'springboot-security-oauth2', 'springboot-elasticsearch-simple')
-include('springboot-security-jwt')
-//include('springboot-elasticsearch-simple')
+rootProject.name = 'springboot-tech-demo'
+include 'springboot-security-simple'
+include 'springboot-security-jwt'
+include 'springboot-security-oauth2'
+include 'springboot-elasticsearch-simple'
 include 'springboot-mail'
 include 'springboot-rabbitmq'
 include 'springboot-rabbitmq-delay-quque'
