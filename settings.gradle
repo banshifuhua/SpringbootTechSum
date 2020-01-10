@@ -6,4 +6,5 @@ include 'springboot-elasticsearch-simple'
 include 'springboot-mail'
 include 'springboot-rabbitmq'
 include 'springboot-rabbitmq-delay-quque'
+include 'springboot-log4j2'
 
